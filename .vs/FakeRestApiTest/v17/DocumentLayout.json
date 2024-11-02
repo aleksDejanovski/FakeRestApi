@@ -3,12 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\AcoBradica\\source\\repos\\FakeRestApiTest\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{758F0FF9-4D0F-463A-A9B4-36C08FC23F21}|FakeRestApiTest.csproj|c:\\users\\acobradica\\source\\repos\\fakerestapitest\\stepdefinitions\\generalsteps.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{758F0FF9-4D0F-463A-A9B4-36C08FC23F21}|FakeRestApiTest.csproj|solutionrelative:stepdefinitions\\generalsteps.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{758F0FF9-4D0F-463A-A9B4-36C08FC23F21}|FakeRestApiTest.csproj|c:\\users\\acobradica\\source\\repos\\fakerestapitest\\features\\activities.feature||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{758F0FF9-4D0F-463A-A9B4-36C08FC23F21}|FakeRestApiTest.csproj|solutionrelative:features\\activities.feature||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{758F0FF9-4D0F-463A-A9B4-36C08FC23F21}|FakeRestApiTest.csproj|c:\\users\\acobradica\\source\\repos\\fakerestapitest\\stepdefinitions\\activitiessteps.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{758F0FF9-4D0F-463A-A9B4-36C08FC23F21}|FakeRestApiTest.csproj|solutionrelative:stepdefinitions\\activitiessteps.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{758F0FF9-4D0F-463A-A9B4-36C08FC23F21}|FakeRestApiTest.csproj|c:\\users\\acobradica\\source\\repos\\fakerestapitest\\models\\activityresponsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{758F0FF9-4D0F-463A-A9B4-36C08FC23F21}|FakeRestApiTest.csproj|solutionrelative:models\\activityresponsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{758F0FF9-4D0F-463A-A9B4-36C08FC23F21}|FakeRestApiTest.csproj|c:\\users\\acobradica\\source\\repos\\fakerestapitest\\services\\activityservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{758F0FF9-4D0F-463A-A9B4-36C08FC23F21}|FakeRestApiTest.csproj|solutionrelative:services\\activityservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{758F0FF9-4D0F-463A-A9B4-36C08FC23F21}|FakeRestApiTest.csproj|c:\\users\\acobradica\\source\\repos\\fakerestapitest\\stepdefinitions\\generalsteps.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{758F0FF9-4D0F-463A-A9B4-36C08FC23F21}|FakeRestApiTest.csproj|solutionrelative:stepdefinitions\\generalsteps.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,15 +30,58 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
+              "Title": "ActivityResponseModel.cs",
+              "DocumentMoniker": "C:\\Users\\AcoBradica\\source\\repos\\FakeRestApiTest\\Models\\ActivityResponseModel.cs",
+              "RelativeDocumentMoniker": "Models\\ActivityResponseModel.cs",
+              "ToolTip": "C:\\Users\\AcoBradica\\source\\repos\\FakeRestApiTest\\Models\\ActivityResponseModel.cs",
+              "RelativeToolTip": "Models\\ActivityResponseModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-02T21:13:29.207Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ActivityServices.cs",
+              "DocumentMoniker": "C:\\Users\\AcoBradica\\source\\repos\\FakeRestApiTest\\Services\\ActivityServices.cs",
+              "RelativeDocumentMoniker": "Services\\ActivityServices.cs",
+              "ToolTip": "C:\\Users\\AcoBradica\\source\\repos\\FakeRestApiTest\\Services\\ActivityServices.cs",
+              "RelativeToolTip": "Services\\ActivityServices.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABEAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-02T21:05:02.107Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ActivitiesSteps.cs",
+              "DocumentMoniker": "C:\\Users\\AcoBradica\\source\\repos\\FakeRestApiTest\\StepDefinitions\\ActivitiesSteps.cs",
+              "RelativeDocumentMoniker": "StepDefinitions\\ActivitiesSteps.cs",
+              "ToolTip": "C:\\Users\\AcoBradica\\source\\repos\\FakeRestApiTest\\StepDefinitions\\ActivitiesSteps.cs",
+              "RelativeToolTip": "StepDefinitions\\ActivitiesSteps.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAAAEkAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-02T21:04:27.689Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "GeneralSteps.cs",
               "DocumentMoniker": "C:\\Users\\AcoBradica\\source\\repos\\FakeRestApiTest\\StepDefinitions\\GeneralSteps.cs",
               "RelativeDocumentMoniker": "StepDefinitions\\GeneralSteps.cs",
@@ -34,25 +89,20 @@
               "RelativeToolTip": "StepDefinitions\\GeneralSteps.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAAB0AAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-02T11:15:38.753Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-02T11:15:38.753Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Activities.feature",
               "DocumentMoniker": "C:\\Users\\AcoBradica\\source\\repos\\FakeRestApiTest\\Features\\Activities.feature",
               "RelativeDocumentMoniker": "Features\\Activities.feature",
               "ToolTip": "C:\\Users\\AcoBradica\\source\\repos\\FakeRestApiTest\\Features\\Activities.feature",
               "RelativeToolTip": "Features\\Activities.feature",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAjAAAAAAAAAA==",
               "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALmSURBVDhPrVPtS1NRGP/du\u002B3uxde5Od\u002B1bL4URmFBhREKqURZH3r9EkSfgj4U\u002BKUPfYhAhMCC6EP1BwTVtxBBgrQQwjJ0URbiSsumzKmsbfdud/d6O\u002BeZS1cQEnvOfnfP\u002BZ3zPOec50UAk\u002B571wzJoXEVS8oCDDY2IwIbLnspVNlM877LvRCu3u02gqYRdO7dTWRpnofvZMI/acdE/CFsjf0WIkEMjk0Q49FaIFy4c9LoaitHo7ueSFVP/Da3mp30r\u002BoRiIIFNosL0cQccWmRTFZ8Dk2R/mwoAJG0LIoYVPzItdqgaDHCqqFDW9XYjeyo9ZwhuHOb4czZgWrXUcZbCQLMtJfbcHsO7kvUDY2eyAPMh0m0o7zwIEwmG0KRCYIoWqCvJrEUfY98\u002BxZCQ9l5FgL3mlUqyrqR5E/ODLjVnI\u002BinJ2oLupAKOojBCPvsCJ/wmJkHDnWSkJEmUFSj2ZWBFP/iqGsBjEdfIxvy4PsSSpB02PshnEWCgWR\u002BAyB63ZL8ZrVumQ/Keu1lhKruRBez2lUOdshCGaCQyoj8DVV\u002B0lw5e6C09HIzDPt6Yac4rHggz9lOTaJ2aUBePKaCTxJNksR6krOsqerhI\u002BBB/i\u002B8pwduCEHTBcLJA8Smpr2SrGaD48wLkyFzJHUZcQSAYb51CZ\u002BNCsZLvyCcWbPUSAVQzjXc8rY2hRC27Z9tMFhdlAhmEQTJMlGnJbUWbco3A1b2Rh2A7ImY8g/SrMvH9zZT4pw/f4N4/XXFyiuTBIhSnHU1jjQUdGOGOsCLqOBcfh/hFmHZJ7PbxxXDATnJJq31B5OVfXLN6\u002BM2cVU0z8Ze4jjrWWwsU4ZnpokLjxXgs6mE/BNT2JxJUQcbzveFPU1XhzYvoe4rtZj6ym62HOJRxtJzyjqKtx462NJUby09vTmo8x2\u002BofQxv7hfqNvoJeIqoYYFvz5aCrZj9tXbm3aUVqynhRyGJVlJOI6we8rwCHvkf\u002B6HQD8AnF2O2/bC\u002BBFAAAAAElFTkSuQmCC",
               "WhenOpened": "2024-11-02T11:14:46.751Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             }
           ]
         }

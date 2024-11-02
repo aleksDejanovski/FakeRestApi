@@ -19,6 +19,11 @@ namespace FakeRestApiTest.Services
         {
             return await httpClient.GetAsync($"{baseUrl}/Activities");
         }
+        public async Task<HttpResponseMessage> GetSpecificActivity(int activityId)
+        {
+            return await httpClient.GetAsync($"{baseUrl}/Activities/{activityId}");
+        }
+
 
 
     }
