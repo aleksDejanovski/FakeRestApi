@@ -2,7 +2,7 @@
 
 A short summary of the feature
 
-@tag1
+
 Scenario: Get all Activities => HTTP 200
 	When I call the endpoint get all activities
 	Then The response code is HTTP 200
@@ -70,6 +70,30 @@ Scenario: Update given activity using valid data => HTTP 200 And check if respon
 	When I send PUT request to the Activities/{id} endpoint using id as 26 and title as "test12" and completed as false
 	Then The response code is HTTP 200
 	And The property title has value "test12"
+
+
+	@bug
+Scenario: CRUD Operations for activities - Test complete flow 
+	When I send POST request to the /Activities endpoint using id as 231 and title as "testTitle"
+	Then The response code is HTTP 200
+	When I call the endpoint get activity and use 231 as id
+	Then The response code is HTTP 200
+	And The property title has value "testTitle"
+	When I send PUT request to the Activities/{id} endpoint using id as 231 and title as "UpdatedTitle" and completed as false
+	Then The response code is HTTP 200
+	And The property title has value "UpdatedTitle"
+	When I send DELETE request to the Activities/{id} endpoint using id as 231
+	Then The response code is HTTP 200
+	When I call the endpoint get activity and use 231 as id
+	Then The response code is HTTP 404
+
+
+Scenario: Delete given activity with valid id => HTTP 200 
+	When I send DELETE request to the Activities/{id} endpoint using id as 22
+	Then The response code is HTTP 200
+
+	
+	
 
 	
 	

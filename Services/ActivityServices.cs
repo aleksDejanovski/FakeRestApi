@@ -43,5 +43,12 @@ namespace FakeRestApiTest.Services
 
         }
 
+        public async Task<HttpResponseMessage> DeleteGivenActivity(int activityId)
+        {
+            return await httpClient.DeleteAsync($"{baseUrl}/Activities/{activityId}");
+        }
+
+
+
     }
 }

@@ -419,6 +419,84 @@ this.ScenarioInitialize(scenarioInfo);
             this.ScenarioCleanup();
         }
         
+        [Xunit.SkippableFactAttribute(DisplayName="CRUD Operations for activities - Test complete flow")]
+        [Xunit.TraitAttribute("FeatureTitle", "Activities")]
+        [Xunit.TraitAttribute("Description", "CRUD Operations for activities - Test complete flow")]
+        [Xunit.TraitAttribute("Category", "bug")]
+        public void CRUDOperationsForActivities_TestCompleteFlow()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "bug"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("CRUD Operations for activities - Test complete flow", null, tagsOfScenario, argumentsOfScenario, featureTags);
+#line 76
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 77
+ testRunner.When("I send POST request to the /Activities endpoint using id as 231 and title as \"tes" +
+                        "tTitle\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 78
+ testRunner.Then("The response code is HTTP 200", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+#line 79
+ testRunner.When("I call the endpoint get activity and use 231 as id", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 80
+ testRunner.Then("The response code is HTTP 200", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+#line 81
+ testRunner.And("The property title has value \"testTitle\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 82
+ testRunner.When("I send PUT request to the Activities/{id} endpoint using id as 231 and title as \"" +
+                        "UpdatedTitle\" and completed as false", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 83
+ testRunner.Then("The response code is HTTP 200", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+#line 84
+ testRunner.And("The property title has value \"UpdatedTitle\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [Xunit.SkippableFactAttribute(DisplayName="Delete given activity with valid id => HTTP 200")]
+        [Xunit.TraitAttribute("FeatureTitle", "Activities")]
+        [Xunit.TraitAttribute("Description", "Delete given activity with valid id => HTTP 200")]
+        public void DeleteGivenActivityWithValidIdHTTP200()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Delete given activity with valid id => HTTP 200", null, tagsOfScenario, argumentsOfScenario, featureTags);
+#line 87
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 88
+ testRunner.When("I send DELETE request to the Activities/{id} endpoint using id as 22", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 89
+ testRunner.Then("The response code is HTTP 200", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
         [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "3.9.0.0")]
         [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
         public class FixtureData : System.IDisposable

@@ -122,7 +122,15 @@ namespace FakeRestApiTest.StepDefinitions
             ScenarioContext.Set<HttpResponseMessage>(response, "response");
 
         }
-        
+
+        [When(@"I send DELETE request to the Activities/\{id} endpoint using id as (.*)")]
+        public async Task WhenISendDELETERequestToTheActivitiesIdEndpointUsingIdAs(int id)
+        {
+            response = await ActivityServices.DeleteGivenActivity(id);
+            ScenarioContext.Set<HttpResponseMessage>(response, "response");
+
+        }
+
 
 
 
