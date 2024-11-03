@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FakeRestApiTest")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+887e283611f4be56d759869071cdde7a8d91f408")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6e81248641da90bc79eb8e2384b228fc15c3d79f")]
 [assembly: System.Reflection.AssemblyProductAttribute("FakeRestApiTest")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FakeRestApiTest")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
