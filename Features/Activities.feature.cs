@@ -83,11 +83,9 @@ namespace FakeRestApiTest.Features
         [Xunit.SkippableFactAttribute(DisplayName="Get all Activities => HTTP 200")]
         [Xunit.TraitAttribute("FeatureTitle", "Activities")]
         [Xunit.TraitAttribute("Description", "Get all Activities => HTTP 200")]
-        [Xunit.TraitAttribute("Category", "tag1")]
         public void GetAllActivitiesHTTP200()
         {
-            string[] tagsOfScenario = new string[] {
-                    "tag1"};
+            string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Get all Activities => HTTP 200", null, tagsOfScenario, argumentsOfScenario, featureTags);
 #line 6
@@ -278,6 +276,43 @@ this.ScenarioInitialize(scenarioInfo);
             this.ScenarioCleanup();
         }
         
+        [Xunit.SkippableFactAttribute(DisplayName="Create new activity using id but send empty title => HTTP 200 And check response " +
+            "content")]
+        [Xunit.TraitAttribute("FeatureTitle", "Activities")]
+        [Xunit.TraitAttribute("Description", "Create new activity using id but send empty title => HTTP 200 And check response " +
+            "content")]
+        public void CreateNewActivityUsingIdButSendEmptyTitleHTTP200AndCheckResponseContent()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Create new activity using id but send empty title => HTTP 200 And check response " +
+                    "content", null, tagsOfScenario, argumentsOfScenario, featureTags);
+#line 43
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 44
+ testRunner.When("I send POST request to the /Activities endpoint using id as 231 and title as \"\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 45
+ testRunner.Then("The response code is HTTP 200", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+#line 46
+ testRunner.And("The response contains \"231\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 47
+ testRunner.And("The property title has value \"\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
         [Xunit.SkippableFactAttribute(DisplayName="Create new activity sending only id as body => HTTP 400 and check content error m" +
             "essage")]
         [Xunit.TraitAttribute("FeatureTitle", "Activities")]
@@ -289,7 +324,7 @@ this.ScenarioInitialize(scenarioInfo);
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Create new activity sending only id as body => HTTP 400 and check content error m" +
                     "essage", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 44
+#line 50
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -299,13 +334,13 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 45
+#line 51
  testRunner.When("I send POST request to the /Activities endpoint using id as \"432\" only as a body", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 46
+#line 52
  testRunner.Then("The response code is HTTP 400", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
-#line 47
+#line 53
  testRunner.And("The response contains \"The JSON value could not be converted to System.Boolean.\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             }
@@ -323,7 +358,7 @@ this.ScenarioInitialize(scenarioInfo);
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Create new activity but sending title as empty string => HTTP 200 and check respo" +
                     "nse", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 50
+#line 56
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -333,13 +368,13 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 51
+#line 57
  testRunner.When("I send POST request to the /Activities endpoint using id as 455 and title as \"\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 52
+#line 58
  testRunner.Then("The response code is HTTP 200", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
-#line 53
+#line 59
  testRunner.And("The response contains \"455\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             }
@@ -360,7 +395,7 @@ this.ScenarioInitialize(scenarioInfo);
             argumentsOfScenario.Add("id", id);
             argumentsOfScenario.Add("responseId", responseId);
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Check system response for different sent Id => Check respose for Id content", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 56
+#line 62
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -370,14 +405,14 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 57
+#line 63
  testRunner.When(string.Format("I send POST request to the /Activities endpoint using id as {0} and title as \"tes" +
                             "tTitle\"", id), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 58
+#line 64
  testRunner.Then("The response code is HTTP 200", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
-#line 59
+#line 65
  testRunner.And(string.Format("The response id has a value of {0}", responseId), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             }
@@ -395,7 +430,7 @@ this.ScenarioInitialize(scenarioInfo);
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Update given activity using valid data => HTTP 200 And check if response title is" +
                     " updated", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 69
+#line 75
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -405,14 +440,14 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 70
+#line 76
  testRunner.When("I send PUT request to the Activities/{id} endpoint using id as 26 and title as \"t" +
                         "est12\" and completed as false", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 71
+#line 77
  testRunner.Then("The response code is HTTP 200", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
-#line 72
+#line 78
  testRunner.And("The property title has value \"test12\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             }
@@ -429,7 +464,7 @@ this.ScenarioInitialize(scenarioInfo);
                     "bug"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("CRUD Operations for activities - Test complete flow", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 76
+#line 82
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -439,31 +474,43 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 77
+#line 83
  testRunner.When("I send POST request to the /Activities endpoint using id as 231 and title as \"tes" +
                         "tTitle\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 78
+#line 84
  testRunner.Then("The response code is HTTP 200", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
-#line 79
+#line 85
  testRunner.When("I call the endpoint get activity and use 231 as id", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 80
+#line 86
  testRunner.Then("The response code is HTTP 200", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
-#line 81
+#line 87
  testRunner.And("The property title has value \"testTitle\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 82
+#line 88
  testRunner.When("I send PUT request to the Activities/{id} endpoint using id as 231 and title as \"" +
                         "UpdatedTitle\" and completed as false", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 83
+#line 89
  testRunner.Then("The response code is HTTP 200", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
-#line 84
+#line 90
  testRunner.And("The property title has value \"UpdatedTitle\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 91
+ testRunner.When("I send DELETE request to the Activities/{id} endpoint using id as 231", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 92
+ testRunner.Then("The response code is HTTP 200", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+#line 93
+ testRunner.When("I call the endpoint get activity and use 231 as id", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 94
+ testRunner.Then("The response code is HTTP 404", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
@@ -477,7 +524,7 @@ this.ScenarioInitialize(scenarioInfo);
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Delete given activity with valid id => HTTP 200", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 87
+#line 97
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -487,10 +534,10 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 88
+#line 98
  testRunner.When("I send DELETE request to the Activities/{id} endpoint using id as 22", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 89
+#line 99
  testRunner.Then("The response code is HTTP 200", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }

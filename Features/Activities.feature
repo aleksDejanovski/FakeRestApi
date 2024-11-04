@@ -40,6 +40,12 @@ Scenario: Create new activity using valid data => HTTP 200 And check response co
 	And The property title has value "testTitle"
 
 
+Scenario: Create new activity using id but send empty title => HTTP 200 And check response content
+	When I send POST request to the /Activities endpoint using id as 231 and title as ""
+	Then The response code is HTTP 200
+	And The response contains "231"
+	And The property title has value ""
+
 
 Scenario: Create new activity sending only id as body => HTTP 400 and check content error message
 	When I send POST request to the /Activities endpoint using id as "432" only as a body

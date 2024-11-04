@@ -17,7 +17,7 @@ namespace FakeRestApiTest.StepDefinitions
         protected string responseBody;
         public ISpecFlowOutputHelper specFlowOutputHelper;
         protected ScenarioContext _scenarioContext;
-
+        protected readonly string baseUrl = "https://fakerestapi.azurewebsites.net/api/v1";
         public GeneralSteps(ISpecFlowOutputHelper specFlowOutputHelper, ScenarioContext scenarioContext)
         {
             httpClient = new HttpClient();

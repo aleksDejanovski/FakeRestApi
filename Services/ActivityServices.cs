@@ -11,7 +11,7 @@ namespace FakeRestApiTest.Services
 {
     public class ActivityServices : GeneralSteps
     {
-        private readonly string baseUrl = "https://fakerestapi.azurewebsites.net/api/v1";
+        
         public ActivityServices(ISpecFlowOutputHelper specFlowOutputHelper, ScenarioContext scenarioContext) : base(specFlowOutputHelper, scenarioContext)
         {
         }
